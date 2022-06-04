@@ -15,6 +15,7 @@
 		586AF8872845212200A4EBA7 /* MovieBookSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AF8862845212200A4EBA7 /* MovieBookSwiftUIUITests.swift */; };
 		586AF8892845212200A4EBA7 /* MovieBookSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AF8882845212200A4EBA7 /* MovieBookSwiftUIUITestsLaunchTests.swift */; };
 		586AF89A284521AA00A4EBA7 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AF899284521AA00A4EBA7 /* Movie.swift */; };
+		588F09FF284B5EFA0088CDE2 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588F09FE284B5EFA0088CDE2 /* MovieViewModel.swift */; };
 		589FF40828462DAA008D5B73 /* DownloaderClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589FF40728462DAA008D5B73 /* DownloaderClient.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		586AF8862845212200A4EBA7 /* MovieBookSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBookSwiftUIUITests.swift; sourceTree = "<group>"; };
 		586AF8882845212200A4EBA7 /* MovieBookSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBookSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		586AF899284521AA00A4EBA7 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		588F09FE284B5EFA0088CDE2 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 		589FF40728462DAA008D5B73 /* DownloaderClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloaderClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +147,7 @@
 		586AF8962845217200A4EBA7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				588F09FE284B5EFA0088CDE2 /* MovieViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				586AF86E2845211B00A4EBA7 /* ContentView.swift in Sources */,
+				588F09FF284B5EFA0088CDE2 /* MovieViewModel.swift in Sources */,
 				586AF86C2845211B00A4EBA7 /* MovieBookSwiftUIApp.swift in Sources */,
 				586AF89A284521AA00A4EBA7 /* Movie.swift in Sources */,
 				589FF40828462DAA008D5B73 /* DownloaderClient.swift in Sources */,

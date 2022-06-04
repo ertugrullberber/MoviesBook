@@ -19,7 +19,7 @@ struct Movie : Codable {
     private enum CodingKeys : String, CodingKey {
         case title = "Title"
         case year = "Year"
-        case imdbId = "imdbId"
+        case imdbId = "imdbID"
         case type = "Type"
         case poster = "Poster"
     }
