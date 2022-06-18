@@ -15,7 +15,7 @@ class MovieListViewModel : ObservableObject {
     let downloaderClient = DownloaderClient()
     
     func MovieSearchDo(movieName: String) {
-        downloaderClient.DownloadMovie(search: movieName) { (result) in
+        downloaderClient.DownloadMovies(search: movieName) { (result) in
             switch result {
             case.failure(let hata):
                 print(hata)

@@ -24,28 +24,34 @@ struct MovieListView: View {
             VStack{
                 
             TextField("Search", text: $theMovieToLookFor, onEditingChanged: {_ in}, onCommit:{
-                self.movieListViewModel.MovieSearchDo(movieName: theMovieToLookFor)
+                self.movieListViewModel.MovieSearchDo(movieName: theMovieToLookFor.trimmingCharacters(in: .whitespacesAndNewlines).addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? theMovieToLookFor)
                 
             }).padding().textFieldStyle(RoundedBorderTextFieldStyle())
             
         List(movieListViewModel.movies, id: \.imdbId) { movie in
-            HStack(){
-                PriveImage(url: movie.poster)
-                    .frame(width: 90, height: 130)
-                    .shadow(radius: 10)
-                
-                VStack(alignment: .leading){
-                    Text(movie.title)
-                        .font(.title2)
-                        .foregroundColor(.blue)
+            NavigationLink(destination: DetailView(imdbId: movie.imdbId),
+                           label: {
+                HStack(){
+                    PriveImage(url: movie.poster)
+                        .frame(width: 90, height: 130)
+                        .shadow(radius: 10)
                     
-                    Text(movie.year)
-                        .font(.title3)
-                        .foregroundColor(.orange)
+                    VStack(alignment: .leading){
+                        Text(movie.title)
+                            .font(.title2)
+                            .foregroundColor(.blue)
+                        
+                        Text(movie.year)
+                            .font(.title3)
+                            .foregroundColor(.orange)
+                    }
+                        
                 }
-                    
-            }
+            })
+            
         }.navigationTitle(Text("Movie Archive"))
+                    
+                    
       }
     }
   }

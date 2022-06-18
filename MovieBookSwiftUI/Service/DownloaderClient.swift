@@ -10,7 +10,7 @@ import Foundation
 
 class DownloaderClient {
     
-    func DownloadMovie(search: String, completion: @escaping (Result<[Movie]?, DownloaderError>) -> Void) {
+    func DownloadMovies(search: String, completion: @escaping (Result<[Movie]?, DownloaderError>) -> Void) {
         
         guard let url = URL(string: "https://www.omdbapi.com/?s=\(search)&apikey=86417447") else {
             return completion(.failure(.wrongUrl))
@@ -26,7 +26,33 @@ class DownloaderClient {
         completion(.success(movieAnswer.movies))
     }.resume()
     }
+    
+    func MovieDetailDownload(imdbId : String, completion: @escaping (Result<MovieDetail, DownloaderError>) -> Void) {
+        
+        
+        guard let url = URL(string: "https://www.omdbapi.com/?i=\(imdbId)&apikey=86417447") else {
+            return completion(.failure(.wrongUrl))
+        }
+        
+        URLSession.shared.dataTask(with: url) {(data, response, error) in
+            guard let data = data, error == nil else {
+                return completion(.failure(.dontComeData))
+            }
+            
+            guard let comeMovieDetail = try? JSONDecoder().decode(MovieDetail.self, from: data) else {
+                return completion(.failure(.dataNotProcessed))
+            }
+            completion(.success(comeMovieDetail))
+                
+                
+        }.resume()
+            
+        }
+    
+    
     }
+
+
     
 
 
@@ -35,3 +61,10 @@ enum DownloaderError : Error {
     case dontComeData
     case dataNotProcessed
 }
+
+
+
+
+
+
+

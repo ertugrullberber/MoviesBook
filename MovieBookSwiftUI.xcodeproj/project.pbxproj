@@ -17,6 +17,9 @@
 		586AF89A284521AA00A4EBA7 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AF899284521AA00A4EBA7 /* Movie.swift */; };
 		586BE328285E165000826C09 /* ImageDownloaderClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586BE327285E165000826C09 /* ImageDownloaderClient.swift */; };
 		586BE32A285E192B00826C09 /* PriveImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586BE329285E192B00826C09 /* PriveImage.swift */; };
+		586BE32C285E4A5300826C09 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586BE32B285E4A5300826C09 /* MovieDetail.swift */; };
+		586BE32E285E5AF600826C09 /* MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586BE32D285E5AF600826C09 /* MovieDetailViewModel.swift */; };
+		586BE330285E5F6000826C09 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586BE32F285E5F5F00826C09 /* DetailView.swift */; };
 		588F09FF284B5EFA0088CDE2 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588F09FE284B5EFA0088CDE2 /* MovieViewModel.swift */; };
 		589FF40828462DAA008D5B73 /* DownloaderClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589FF40728462DAA008D5B73 /* DownloaderClient.swift */; };
 /* End PBXBuildFile section */
@@ -52,6 +55,9 @@
 		586AF899284521AA00A4EBA7 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		586BE327285E165000826C09 /* ImageDownloaderClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderClient.swift; sourceTree = "<group>"; };
 		586BE329285E192B00826C09 /* PriveImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriveImage.swift; sourceTree = "<group>"; };
+		586BE32B285E4A5300826C09 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
+		586BE32D285E5AF600826C09 /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
+		586BE32F285E5F5F00826C09 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		588F09FE284B5EFA0088CDE2 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 		589FF40728462DAA008D5B73 /* DownloaderClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloaderClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				586AF899284521AA00A4EBA7 /* Movie.swift */,
+				586BE32B285E4A5300826C09 /* MovieDetail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -152,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				588F09FE284B5EFA0088CDE2 /* MovieViewModel.swift */,
+				586BE32D285E5AF600826C09 /* MovieDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -161,6 +169,7 @@
 			children = (
 				586AF86D2845211B00A4EBA7 /* MovieListView.swift */,
 				586BE329285E192B00826C09 /* PriveImage.swift */,
+				586BE32F285E5F5F00826C09 /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -315,10 +324,13 @@
 				586AF86E2845211B00A4EBA7 /* MovieListView.swift in Sources */,
 				588F09FF284B5EFA0088CDE2 /* MovieViewModel.swift in Sources */,
 				586AF86C2845211B00A4EBA7 /* MovieBookSwiftUIApp.swift in Sources */,
+				586BE330285E5F6000826C09 /* DetailView.swift in Sources */,
 				586BE32A285E192B00826C09 /* PriveImage.swift in Sources */,
 				586AF89A284521AA00A4EBA7 /* Movie.swift in Sources */,
 				589FF40828462DAA008D5B73 /* DownloaderClient.swift in Sources */,
 				586BE328285E165000826C09 /* ImageDownloaderClient.swift in Sources */,
+				586BE32C285E4A5300826C09 /* MovieDetail.swift in Sources */,
+				586BE32E285E5AF600826C09 /* MovieDetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
