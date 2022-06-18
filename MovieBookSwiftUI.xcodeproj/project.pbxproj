@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		586AF86C2845211B00A4EBA7 /* MovieBookSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AF86B2845211B00A4EBA7 /* MovieBookSwiftUIApp.swift */; };
-		586AF86E2845211B00A4EBA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AF86D2845211B00A4EBA7 /* ContentView.swift */; };
+		586AF86E2845211B00A4EBA7 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AF86D2845211B00A4EBA7 /* MovieListView.swift */; };
 		586AF8702845212100A4EBA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 586AF86F2845212100A4EBA7 /* Assets.xcassets */; };
 		586AF8732845212100A4EBA7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 586AF8722845212100A4EBA7 /* Preview Assets.xcassets */; };
 		586AF87D2845212200A4EBA7 /* MovieBookSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AF87C2845212200A4EBA7 /* MovieBookSwiftUITests.swift */; };
@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		586AF8682845211B00A4EBA7 /* MovieBookSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieBookSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		586AF86B2845211B00A4EBA7 /* MovieBookSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBookSwiftUIApp.swift; sourceTree = "<group>"; };
-		586AF86D2845211B00A4EBA7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		586AF86D2845211B00A4EBA7 /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
 		586AF86F2845212100A4EBA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		586AF8722845212100A4EBA7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		586AF8782845212200A4EBA7 /* MovieBookSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieBookSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,7 +155,7 @@
 		586AF8972845217C00A4EBA7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				586AF86D2845211B00A4EBA7 /* ContentView.swift */,
+				586AF86D2845211B00A4EBA7 /* MovieListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -306,7 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				586AF86E2845211B00A4EBA7 /* ContentView.swift in Sources */,
+				586AF86E2845211B00A4EBA7 /* MovieListView.swift in Sources */,
 				588F09FF284B5EFA0088CDE2 /* MovieViewModel.swift in Sources */,
 				586AF86C2845211B00A4EBA7 /* MovieBookSwiftUIApp.swift in Sources */,
 				586AF89A284521AA00A4EBA7 /* Movie.swift in Sources */,
