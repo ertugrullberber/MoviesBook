@@ -13,19 +13,32 @@ struct MovieListView: View {
     
     init() {
         self.movieListViewModel = MovieListViewModel()
-        self.movieListViewModel.MovieSearchDo(movieName: "acti")
+        self.movieListViewModel.MovieSearchDo(movieName: "pulp")
     }
     
     
     var body: some View {
+        NavigationView{
         List(movieListViewModel.movies, id: \.imdbId) { movie in
-            HStack{
-                Image("placeholder")
-                    .frame(width: 100, height: 150)
+            HStack(){
+                PriveImage(url: movie.poster)
+                    .frame(width: 90, height: 130)
+                    .shadow(radius: 10)
+                
+                VStack(alignment: .leading){
+                    Text(movie.title)
+                        .font(.title2)
+                        .foregroundColor(.blue)
+                    
+                    Text(movie.year)
+                        .font(.title3)
+                        .foregroundColor(.orange)
+                }
                     
             }
-        }
+        }.navigationTitle(Text("Movie Search"))
     }
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {

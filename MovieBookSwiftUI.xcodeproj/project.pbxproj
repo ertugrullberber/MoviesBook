@@ -15,6 +15,8 @@
 		586AF8872845212200A4EBA7 /* MovieBookSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AF8862845212200A4EBA7 /* MovieBookSwiftUIUITests.swift */; };
 		586AF8892845212200A4EBA7 /* MovieBookSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AF8882845212200A4EBA7 /* MovieBookSwiftUIUITestsLaunchTests.swift */; };
 		586AF89A284521AA00A4EBA7 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586AF899284521AA00A4EBA7 /* Movie.swift */; };
+		586BE328285E165000826C09 /* ImageDownloaderClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586BE327285E165000826C09 /* ImageDownloaderClient.swift */; };
+		586BE32A285E192B00826C09 /* PriveImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586BE329285E192B00826C09 /* PriveImage.swift */; };
 		588F09FF284B5EFA0088CDE2 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588F09FE284B5EFA0088CDE2 /* MovieViewModel.swift */; };
 		589FF40828462DAA008D5B73 /* DownloaderClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589FF40728462DAA008D5B73 /* DownloaderClient.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +50,8 @@
 		586AF8862845212200A4EBA7 /* MovieBookSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBookSwiftUIUITests.swift; sourceTree = "<group>"; };
 		586AF8882845212200A4EBA7 /* MovieBookSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBookSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		586AF899284521AA00A4EBA7 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		586BE327285E165000826C09 /* ImageDownloaderClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderClient.swift; sourceTree = "<group>"; };
+		586BE329285E192B00826C09 /* PriveImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriveImage.swift; sourceTree = "<group>"; };
 		588F09FE284B5EFA0088CDE2 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 		589FF40728462DAA008D5B73 /* DownloaderClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloaderClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				586AF86D2845211B00A4EBA7 /* MovieListView.swift */,
+				586BE329285E192B00826C09 /* PriveImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				589FF40728462DAA008D5B73 /* DownloaderClient.swift */,
+				586BE327285E165000826C09 /* ImageDownloaderClient.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -309,8 +315,10 @@
 				586AF86E2845211B00A4EBA7 /* MovieListView.swift in Sources */,
 				588F09FF284B5EFA0088CDE2 /* MovieViewModel.swift in Sources */,
 				586AF86C2845211B00A4EBA7 /* MovieBookSwiftUIApp.swift in Sources */,
+				586BE32A285E192B00826C09 /* PriveImage.swift in Sources */,
 				586AF89A284521AA00A4EBA7 /* Movie.swift in Sources */,
 				589FF40828462DAA008D5B73 /* DownloaderClient.swift in Sources */,
+				586BE328285E165000826C09 /* ImageDownloaderClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
