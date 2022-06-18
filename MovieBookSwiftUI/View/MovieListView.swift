@@ -10,15 +10,24 @@ import SwiftUI
 struct MovieListView: View {
     
     @ObservedObject var movieListViewModel : MovieListViewModel
+    @State var theMovieToLookFor = ""
     
     init() {
         self.movieListViewModel = MovieListViewModel()
-        self.movieListViewModel.MovieSearchDo(movieName: "pulp")
+        
     }
     
     
     var body: some View {
         NavigationView{
+            
+            VStack{
+                
+            TextField("Search", text: $theMovieToLookFor, onEditingChanged: {_ in}, onCommit:{
+                self.movieListViewModel.MovieSearchDo(movieName: theMovieToLookFor)
+                
+            }).padding().textFieldStyle(RoundedBorderTextFieldStyle())
+            
         List(movieListViewModel.movies, id: \.imdbId) { movie in
             HStack(){
                 PriveImage(url: movie.poster)
@@ -36,7 +45,8 @@ struct MovieListView: View {
                 }
                     
             }
-        }.navigationTitle(Text("Movie Search"))
+        }.navigationTitle(Text("Movie Archive"))
+      }
     }
   }
 }
