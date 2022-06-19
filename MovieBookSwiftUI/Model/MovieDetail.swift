@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct MovieDetail : Codable {
+struct MovieDetail : Codable  {
     
     let title : String
     let year : String
@@ -27,7 +27,7 @@ struct MovieDetail : Codable {
         case title = "Title"
         case year = "Year"
         case genre = "Genre"
-        case diretor = "Director"
+        case director = "Director"
         case writer = "Writer"
         case actors = "Actors"
         case plot = "Plot"
@@ -35,7 +35,7 @@ struct MovieDetail : Codable {
         case poster = "Poster"
         case metascore = "Metascore"
         case imdbRating = "imdbRating"
-        case imdb = "imdbID"
+        case imdbId = "imdbID"
     }
     
 }

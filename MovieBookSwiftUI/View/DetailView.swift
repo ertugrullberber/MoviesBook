@@ -13,9 +13,15 @@ struct DetailView: View {
     
     let imdbId : String
     
+    @ObservedObject var movieDetailViewModel = MovieDetailViewModel()
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Text(movieDetailViewModel.movieDetail?.plot ?? "Plot Gosterilecek")
+        }.onAppear(perform: {
+            self.movieDetailViewModel
+                .movieDetailGet(imdbId: imdbId)
+        })
     }
 }
 
