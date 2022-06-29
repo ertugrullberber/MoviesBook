@@ -17,43 +17,46 @@ struct MovieListView: View {
         
     }
     
-    
     var body: some View {
-        NavigationView{
-            
-            VStack{
-                
-            TextField("Search", text: $theMovieToLookFor, onEditingChanged: {_ in}, onCommit:{
-                self.movieListViewModel.MovieSearchDo(movieName: theMovieToLookFor.trimmingCharacters(in: .whitespacesAndNewlines).addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? theMovieToLookFor)
-                
-            }).padding().textFieldStyle(RoundedBorderTextFieldStyle())
-            
-        List(movieListViewModel.movies, id: \.imdbId) { movie in
-            NavigationLink(destination: DetailView(imdbId: movie.imdbId),
-                           label: {
-                HStack(){
-                    PriveImage(url: movie.poster)
-                        .frame(width: 90, height: 130)
-                        .shadow(radius: 10)
+        ZStack{
+            NavigationView{
+                VStack{
+                TextField("Search", text: $theMovieToLookFor, onEditingChanged: {_ in}, onCommit:{
+                    self.movieListViewModel.MovieSearchDo(movieName: theMovieToLookFor.trimmingCharacters(in: .whitespacesAndNewlines).addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? theMovieToLookFor)
                     
-                    VStack(alignment: .leading){
-                        Text(movie.title)
-                            .font(.title2)
-                            .foregroundColor(.blue)
+                }).padding().textFieldStyle(RoundedBorderTextFieldStyle())
+                
+            List(movieListViewModel.movies, id: \.imdbId) { movie in
+                NavigationLink(destination: DetailView(imdbId: movie.imdbId),
+                               label: {
+                    HStack(){
+                        PriveImage(url: movie.poster)
+                            .frame(width: 90, height: 130)
+                            .shadow(radius: 10)
                         
-                        Text(movie.year)
-                            .font(.title3)
-                            .foregroundColor(.orange)
+                        VStack(alignment: .leading){
+                            Text(movie.title)
+                                .font(.title2)
+                                .foregroundColor(Color(red: 0.00, green: 0.05, blue: 0.26))
+                                .padding(1)
+                            
+                            Text(movie.year)
+                                .font(.title3)
+                                .foregroundColor(Color(red: 0.00, green: 0.05, blue: 0.26))
+                                .padding(1)
+                        }
+                            
                     }
+                }).listRowBackground(Color(red: 1.00, green: 0.95, blue: 0.74))
+                
+            }.navigationTitle(Text("Movie Archive"))
+    
                         
-                }
-            })
+                }.background(Color(red: 1.00, green: 0.95, blue: 0.74))
+            }
             
-        }.navigationTitle(Text("Movie Archive"))
-                    
-                    
-      }
-    }
+        }
+        
   }
 }
 

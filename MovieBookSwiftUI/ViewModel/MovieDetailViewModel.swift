@@ -20,7 +20,9 @@ class MovieDetailViewModel : ObservableObject {
             case .failure(let error) :
                 print(error)
             case .success(let movieDetail) :
-                self.movieDetail = MovieDetailsViewModel(detail: movieDetail)
+                DispatchQueue.main.async {
+                    self.movieDetail = MovieDetailsViewModel(detail: movieDetail)
+                }
             }
         }
     }
